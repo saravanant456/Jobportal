@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyal Job Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+        body {
+            background-color: #bbbfc4;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .card {
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .job-listing {
+            display: flex;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-info {
+            flex: 1;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .company {
+            font-style: italic;
+            color: #777;
+        }
+
+        .location {
+            color: #555;
+        }
+
+        .apply-btn {
+            background-color:#343a40;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 50px;
+        }
+
+        .apply-btn:hover{
+            color:black;
+            text-decoration: none;
+            background-color: #929fac;
+        }
+
+        .carousel-item img{
+            height: 600px;
+        }
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Seyal Job Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#section1">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loginbootstrap.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registrationbootstrap.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Job Categories</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#section3">Client Reviews</a>
+                        <a class="dropdown-item" href="#section4">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section5">Job Listings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="js1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stay Inspired in Your Job Hunt </h5>
+                    <p>Embrace the journey,align your career with your Passion</p>
+                </div>
+            </div>  
+            <div class="carousel-item">
+                <img src="js2.jpg" class="d-block  w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Navigate Your Career Path Wisely</h5>
+                    <p>Keep searching, your dream job is just around the corner!</p>
+                </div>
+            </div>  
+            <div class="carousel-item ">
+                <img src="js3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Resilience in the Job Market</h5>
+                    <p>Rejections are stepping stones,not roadblocks</p>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <br>
+    <h2 class="text-center" id="section2">Job Categories</h2>
+    <div class="container" >
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Technology and IT</h5>
+                    <p class="card-text">Software Developer, Admin & More </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Healthcare</h5>
+                    <p class="card-text">Nurse, Lab Technician & More</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Finance</h5>
+                    <p class="card-text">Accountant, Financial Analyst & More</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Marketing</h5>
+                    <p class="card-text">Content Writer, Digital Marketing Specialist & More</p>
+                </div>
+            </div>
+        </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text">Teacher, Counselor, Attender & More</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineering</h5>
+                        <p class="card-text">Mech, Civil, Electrical Engg & More</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sales</h5>
+                        <p class="card-text">Description of category 2.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Human Resources</h5>
+                        <p class="card-text">Description of category 2.</p>
+                    </div>
+                </div>   
+            </div>
+    </div>
+    <br>
+    <header>
+        <h2 class="text-center" id="section5"> Job Listings</h1>
+      </header>
+    
+      <div class="job-listing"  >
+        <div class="job-info">
+          <h3>Front-end Developer</h3>
+          <p class="company">OneYes infotech</p>
+          <p class="location">Chennai</p>
+        </div>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-listing" >
+        <div class="job-info">
+          <h3>Marketing Specialist</h3>
+          <p class="company">OneYes infotech</p>
+          <p class="location">Chennai</p>
+        </div>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <div class="job-listing" >
+        <div class="job-info">
+          <h3>UI & UX Designer</h3>
+          <p class="company">OneYes infotech</p>
+          <p class="location">Chennai</p>
+        </div>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <div class="job-listing">
+        <div class="job-info">
+          <h3>Data Associate</h3>
+          <p class="company">OneYes infotech</p>
+          <p class="location">Salem</p>
+        </div>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <br>
+      <div class="container mt-5" id="section3">
+        <h2 class="text-center mb-4">Client Reviews</h2>
+    
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Veera Raghavan - Software Developer</h5>
+                <p class="card-text">"The job portal streamlined my job search, providing tailored job recommendations based on my skills. The user-friendly interface and quick application process made my job hunting experience efficient and stress-free. I landed my dream job within weeks!"</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Leo  - Marketing Specialist</h5>
+                <p class="card-text">"I appreciate the diverse range of job listings and the portal's emphasis on matching candidates with positions that align with their expertise. The personalized job alerts kept me informed about relevant opportunities, ultimately leading me to a role that perfectly fits my skills and aspirations"</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Jagadeesh - Recent Graduate</h5>
+                <p class="card-text">"As a recent graduate, the job portal provided invaluable resources for entry-level positions. The resume-building tools and interview tips were instrumental in securing my first job. The portal's commitment to supporting candidates at every stage of their career journey sets it apart."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br>
+    <div class="footer" id="section4">
+        <h4 class="text-center">Contact Us :</h4><br>
+        <h5>Company Address || Contact Details</h5>
+        <p>No 2 , Seyal Head Office , Tirunelveli  .   Phone : +91 9876543210</p>
+        <p>Creator's Email : saravanant456@gmail.com</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
